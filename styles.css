@@ -202,7 +202,7 @@ nav a{
     font-size: 2rem;
 }
 /*phone*/
-@media (max-width:480px){
+@media (max-width:688px){
     .content-container{
         flex-direction: column-reverse;
     }
