@@ -64,6 +64,7 @@ h2{
     height:2.5rem;
 }
 .card-button:hover{
+    cursor:grab/pointer;
     opacity:1;
 }
 .card-button {
@@ -148,6 +149,7 @@ h2{
 }
 .button-blue:hover, .button-green:hover{
     background-position: right bottom;
+    cursor:grab/pointer;
 }
 
 .button-blue:hover .button-arrow-blue img, .button-green:hover .button-arrow-green img{
