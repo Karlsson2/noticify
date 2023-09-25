@@ -186,3 +186,37 @@ nav a{
     font-weight: 800;
     font-size: 2rem;
 }
+
+
+/*phone*/
+@media (max-width:480px){
+    .content-container{
+        flex-direction: column-reverse;
+    }
+    .cards{
+        width:100%;
+    }
+    .card {
+        width: calc(100%);
+    }
+    .welcome-message{
+        width:100%;
+    }
+}
+
+/*laptop/tablet */
+@media (max-width:960px){
+    .content-container{
+        flex-direction: column-reverse;
+    }
+    .cards{
+        width:100%;
+    }
+    .welcome-message{
+        width:100%;
+    }
+}
+
+/*laptops*/
+@media (min-width:1025px){}
+
