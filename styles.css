@@ -24,26 +24,30 @@ body {
   width: 95vw;
   margin: 0 auto;
 }
+
 .content-container {
   display: flex;
   justify-content: space-between;
   gap: 2em;
+  flex-direction: column-reverse;
+}
+nav {
+  display: flex;
 }
 h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 800;
-  line-height: 4rem;
+  line-height: 3rem;
 }
 h2 {
   font-size: 2rem;
   font-weight: 800;
 }
 .cards {
-  width: 60%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   gap: 1em;
-  height: 80vh;
 }
 .card:hover {
   box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
@@ -51,7 +55,7 @@ h2 {
 .card {
   border-radius: 20px;
   background-color: var(--bg-gray);
-  width: calc(50% - 1em);
+  width: calc(100%);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   position: relative;
   display: flex;
@@ -107,7 +111,7 @@ h2 {
   background-color: var(--pink);
 }
 .welcome-message {
-  width: 40%;
+  width: 100%;
   padding: 2rem;
 }
 .welcome-buttons {
@@ -206,30 +210,43 @@ nav a {
   font-weight: 800;
   font-size: 2rem;
 }
-/*phone*/
-@media (max-width: 688px) {
+
+/*tablet*/
+@media (min-width: 576px) {
   .content-container {
-    flex-direction: column-reverse;
+    flex-direction: row;
   }
   .cards {
-    width: 100%;
+    width: 50%;
   }
   .card {
     width: calc(100%);
+    height: auto;
   }
   .welcome-message {
-    width: 100%;
+    width: 50%;
+  }
+  h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  h2 {
+    line-height: 1.6rem;
+    font-size: 1.6rem;
+    margin-top: 1rem;
   }
 }
-/*laptop/tablet */
-@media (max-width: 960px) {
+@media (min-width: 1024px) {
   .content-container {
-    flex-direction: column-reverse;
+    flex-direction: row;
   }
   .cards {
-    width: 100%;
+    width: 60%;
+  }
+  .card {
+    width: calc(50% - 2em);
   }
   .welcome-message {
-    width: 100%;
+    width: 40%;
   }
 }
